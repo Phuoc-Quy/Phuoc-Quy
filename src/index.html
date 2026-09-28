@@ -21,7 +21,7 @@
     <nav class="side-navbar" aria-label="Main navigation">
       <a
         class="nav-brand"
-        href="docs/Phuoc-Quy-Resume.pdf"
+        href="assets/docs/Phuoc-Quy-Resume.pdf"
         download
         aria-label="Download CV"
         title="Download CV"
@@ -48,12 +48,72 @@
     </nav>
 
     <section id="hero" class="hero">
+      <div class="hero-content">
+        <div class="hero-profile">
+          <div class="avatar-frame">
+            <img src="assets/images/avatar.png" alt="Phuoc Quy" />
+          </div>
+          <h1>Hello, I'm Phuoc Quy</h1>
+          <div class="hero-about">
+            <p>
+              A curious developer focused on creating clean, useful, and human
+              centered work.
+            </p>
+          </div>
+        </div>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/phuocquyforwork@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_subject" value="New portfolio message" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="text"
+            name="_honey"
+            tabindex="-1"
+            autocomplete="off"
+            hidden
+          />
+          <p class="contact-label">Get in touch</p>
+          <h2>Let's talk.</h2>
+          <label for="contact-name">Name</label>
+          <input
+            id="contact-name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            required
+          />
+          <label for="contact-email">Email</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            rows="4"
+            placeholder="Your message here..."
+            required
+          ></textarea>
+          <button type="submit">
+            Send message
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </form>
+      </div>
       <a
         class="scroll-cue scroll-cue-down"
         href="#main"
         aria-label="Scroll down to main content"
       >
-        <span>Scroll down</span>
+        <span>Home</span>
         <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
       </a>
     </section>
@@ -65,7 +125,7 @@
         aria-label="Scroll up to hero section"
       >
         <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
-        <span>Scroll up</span>
+        <span>About</span>
       </a>
       <footer class="main-footer">
         <i class="fa-regular fa-copyright" aria-hidden="true"></i>
