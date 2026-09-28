@@ -130,50 +130,48 @@
             type="button"
             aria-haspopup="dialog"
             aria-controls="skills-modal"
+            data-profile-trigger="skills"
           >
             <i class="fa-solid fa-code info-icon" aria-hidden="true"></i>
-            <p class="info-number">01</p>
-            <h3>Technical Skills</h3>
-            <p class="info-detail">Python · C/C++/C# · Java · JavaScript · TypeScript · SQL</p>
-            <p class="info-detail">React · Node.js · .NET · PostgreSQL · Redis · AWS · Docker</p>
+            <p class="info-number"></p>
+            <h3></h3>
+            <div class="info-preview"></div>
           </button>
           <button
             class="info-box info-box-experience"
             type="button"
             aria-haspopup="dialog"
             aria-controls="experience-modal"
+            data-profile-trigger="experience"
           >
             <i class="fa-solid fa-briefcase info-icon" aria-hidden="true"></i>
-            <p class="info-number">02</p>
-            <h3>Experiences</h3>
-            <p class="info-detail"><strong>IoT Network Technician Intern</strong><br />Foundation Pharmacy · 2026</p>
-            <p class="info-detail"><strong>Instructional Student Assistant</strong><br />CSULB · 2025</p>
-            <p class="info-detail"><strong>Data Warehouse Assistant Intern</strong><br />Superbalife International · 2023</p>
+            <p class="info-number"></p>
+            <h3></h3>
+            <div class="info-preview"></div>
           </button>
           <button
             class="info-box info-box-project"
             type="button"
             aria-haspopup="dialog"
             aria-controls="projects-modal"
+            data-profile-trigger="projects"
           >
             <i class="fa-solid fa-layer-group info-icon" aria-hidden="true"></i>
-            <p class="info-number">03</p>
-            <h3>Projects</h3>
-            <p class="info-detail"><strong>KouMe</strong><br />Full-stack React Native application with secure authentication, PostgreSQL and Redis.</p>
-            <p class="info-detail"><strong>Design Patterns</strong><br />Public repository demonstrating clean code architecture.</p>
-            <p class="info-detail"><strong>Data Structures</strong><br />Core structures and algorithms implemented from scratch.</p>
+            <p class="info-number"></p>
+            <h3></h3>
+            <div class="info-preview"></div>
           </button>
           <button
             class="info-box info-box-education"
             type="button"
             aria-haspopup="dialog"
             aria-controls="education-modal"
+            data-profile-trigger="education"
           >
             <i class="fa-solid fa-book-open info-icon" aria-hidden="true"></i>
-            <p class="info-number">04</p>
-            <h3>Educations</h3>
-            <p class="info-detail"><strong>B.S. Computer Science</strong><br />California State University, Long Beach · GPA 4.0 · Dean's List</p>
-            <p class="info-detail"><strong>A.S. Computer Information Systems</strong><br />El Camino College · GPA 4.0 · Dean's List</p>
+            <p class="info-number"></p>
+            <h3></h3>
+            <div class="info-preview"></div>
           </button>
         </div>
       </div>
@@ -190,9 +188,20 @@
         <span>Copyright Phuoc Quy 2026</span>
       </footer>
     </section>
-    <div class="skills-modal" id="skills-modal" role="dialog" aria-modal="true" aria-labelledby="skills-modal-title" hidden>
+    <div
+      class="skills-modal"
+      id="skills-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="skills-modal-title"
+      hidden
+    >
       <div class="skills-modal-panel">
-        <button class="skills-modal-close" type="button" aria-label="Close technical skills">
+        <button
+          class="skills-modal-close"
+          type="button"
+          aria-label="Close technical skills"
+        >
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
         <p class="main-kicker">Tools I work with</p>
@@ -200,126 +209,276 @@
         <div class="skills-logo-row" aria-label="Technical skills logos">
           <div class="skills-logo-track">
             <div class="skills-logo-set">
-              <span class="skill-logo"><i class="fa-brands fa-python" aria-hidden="true"></i><small>Python</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-java" aria-hidden="true"></i><small>Java</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-js" aria-hidden="true"></i><small>JavaScript</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-react" aria-hidden="true"></i><small>React</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-node-js" aria-hidden="true"></i><small>Node.js</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-docker" aria-hidden="true"></i><small>Docker</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-aws" aria-hidden="true"></i><small>AWS</small></span>
-              <span class="skill-logo"><i class="fa-solid fa-database" aria-hidden="true"></i><small>SQL</small></span>
+              <span class="skill-logo"
+                ><i class="fa-brands fa-python" aria-hidden="true"></i
+                ><small>Python</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-java" aria-hidden="true"></i
+                ><small>Java</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-js" aria-hidden="true"></i
+                ><small>JavaScript</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-react" aria-hidden="true"></i
+                ><small>React</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-node-js" aria-hidden="true"></i
+                ><small>Node.js</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-docker" aria-hidden="true"></i
+                ><small>Docker</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-aws" aria-hidden="true"></i
+                ><small>AWS</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-solid fa-database" aria-hidden="true"></i
+                ><small>SQL</small></span
+              >
             </div>
             <div class="skills-logo-set" aria-hidden="true">
-              <span class="skill-logo"><i class="fa-brands fa-python" aria-hidden="true"></i><small>Python</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-java" aria-hidden="true"></i><small>Java</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-js" aria-hidden="true"></i><small>JavaScript</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-react" aria-hidden="true"></i><small>React</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-node-js" aria-hidden="true"></i><small>Node.js</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-docker" aria-hidden="true"></i><small>Docker</small></span>
-              <span class="skill-logo"><i class="fa-brands fa-aws" aria-hidden="true"></i><small>AWS</small></span>
-              <span class="skill-logo"><i class="fa-solid fa-database" aria-hidden="true"></i><small>SQL</small></span>
+              <span class="skill-logo"
+                ><i class="fa-brands fa-python" aria-hidden="true"></i
+                ><small>Python</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-java" aria-hidden="true"></i
+                ><small>Java</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-js" aria-hidden="true"></i
+                ><small>JavaScript</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-react" aria-hidden="true"></i
+                ><small>React</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-node-js" aria-hidden="true"></i
+                ><small>Node.js</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-docker" aria-hidden="true"></i
+                ><small>Docker</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-brands fa-aws" aria-hidden="true"></i
+                ><small>AWS</small></span
+              >
+              <span class="skill-logo"
+                ><i class="fa-solid fa-database" aria-hidden="true"></i
+                ><small>SQL</small></span
+              >
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="skills-modal" id="experience-modal" role="dialog" aria-modal="true" aria-labelledby="experience-modal-title" hidden>
+    <div
+      class="skills-modal"
+      id="experience-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="experience-modal-title"
+      hidden
+    >
       <div class="skills-modal-panel experience-modal-panel">
-        <button class="skills-modal-close experience-modal-close" type="button" aria-label="Close experience details">
+        <button
+          class="skills-modal-close experience-modal-close"
+          type="button"
+          aria-label="Close experience details"
+        >
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
         <p class="main-kicker">Where I've worked</p>
         <h2 id="experience-modal-title">Work experience</h2>
         <div class="experience-list">
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Jun 2026 - Aug 2026</strong><span>Delray Beach, FL</span></div>
+            <div class="experience-meta">
+              <strong>Jun 2026 - Aug 2026</strong><span>Delray Beach, FL</span>
+            </div>
             <h3>IoT Network Technician - Internship</h3>
             <p class="experience-company">Foundation Pharmacy, LLC</p>
             <ul>
-              <li>Deployed and configured 8 workstations and 1 automated packaging machine, establishing reliable network connectivity for daily operations.</li>
-              <li>Integrated workstation systems with company software through API configuration.</li>
-              <li>Optimized network connectivity, allowing workers to begin operations 2 days ahead of schedule.</li>
+              <li>
+                Deployed and configured 8 workstations and 1 automated packaging
+                machine, establishing reliable network connectivity for daily
+                operations.
+              </li>
+              <li>
+                Integrated workstation systems with company software through API
+                configuration.
+              </li>
+              <li>
+                Optimized network connectivity, allowing workers to begin
+                operations 2 days ahead of schedule.
+              </li>
             </ul>
           </article>
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Jan 2025 - Dec 2025</strong><span>Long Beach, CA</span></div>
+            <div class="experience-meta">
+              <strong>Jan 2025 - Dec 2025</strong><span>Long Beach, CA</span>
+            </div>
             <h3>Instructional Student Assistant</h3>
-            <p class="experience-company">California State University, Long Beach</p>
+            <p class="experience-company">
+              California State University, Long Beach
+            </p>
             <ul>
-              <li>Assisted in teaching CS courses and supported 100+ students through debugging and concept clarification.</li>
-              <li>Improved student performance through structured guidance and technical explanations.</li>
+              <li>
+                Assisted in teaching CS courses and supported 100+ students
+                through debugging and concept clarification.
+              </li>
+              <li>
+                Improved student performance through structured guidance and
+                technical explanations.
+              </li>
             </ul>
           </article>
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Mar 2023 - Jun 2023</strong><span>Los Angeles, CA</span></div>
+            <div class="experience-meta">
+              <strong>Mar 2023 - Jun 2023</strong><span>Los Angeles, CA</span>
+            </div>
             <h3>Data Warehouse Assistant - Internship</h3>
             <p class="experience-company">Superbalife International, LLC</p>
             <ul>
-              <li>Migrated 50,000+ legacy records from Excel to a structured SQL database, reducing manual data management time by 22%.</li>
-              <li>Automated order-data sorting, saving approximately 1 hour of processing time per day.</li>
+              <li>
+                Migrated 50,000+ legacy records from Excel to a structured SQL
+                database, reducing manual data management time by 22%.
+              </li>
+              <li>
+                Automated order-data sorting, saving approximately 1 hour of
+                processing time per day.
+              </li>
             </ul>
           </article>
         </div>
       </div>
     </div>
-    <div class="skills-modal" id="projects-modal" role="dialog" aria-modal="true" aria-labelledby="projects-modal-title" hidden>
+    <div
+      class="skills-modal"
+      id="projects-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="projects-modal-title"
+      hidden
+    >
       <div class="skills-modal-panel experience-modal-panel">
-        <button class="skills-modal-close projects-modal-close" type="button" aria-label="Close project details">
+        <button
+          class="skills-modal-close projects-modal-close"
+          type="button"
+          aria-label="Close project details"
+        >
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
         <p class="main-kicker">Selected work</p>
         <h2 id="projects-modal-title">Projects</h2>
         <div class="experience-list">
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Jan 2026 - Present</strong><span>Full-stack application</span></div>
+            <div class="experience-meta">
+              <strong>Jan 2026 - Present</strong
+              ><span>Full-stack application</span>
+            </div>
             <h3>KouMe</h3>
-            <p class="experience-company">React Native · Expo · TypeScript · Node.js · Express · PostgreSQL · Redis</p>
+            <p class="experience-company">
+              React Native · Expo · TypeScript · Node.js · Express · PostgreSQL
+              · Redis
+            </p>
             <ul>
-              <li>Built signup, login, logout, OTP verification and password reset workflows.</li>
-              <li>Implemented JWT access and refresh tokens, RSA key pairs, bcrypt hashing, SecureStore and token revocation.</li>
-              <li>Designed modular controllers, services, repositories, migrations and Redis stores with automated unit and integration tests.</li>
+              <li>
+                Built signup, login, logout, OTP verification and password reset
+                workflows.
+              </li>
+              <li>
+                Implemented JWT access and refresh tokens, RSA key pairs, bcrypt
+                hashing, SecureStore and token revocation.
+              </li>
+              <li>
+                Designed modular controllers, services, repositories, migrations
+                and Redis stores with automated unit and integration tests.
+              </li>
             </ul>
           </article>
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Public repository</strong><span>Software architecture</span></div>
+            <div class="experience-meta">
+              <strong>Public repository</strong
+              ><span>Software architecture</span>
+            </div>
             <h3>Design Patterns</h3>
-            <p class="experience-company">Clean code and reusable architecture</p>
+            <p class="experience-company">
+              Clean code and reusable architecture
+            </p>
             <ul>
-              <li>Developed a public repository demonstrating design patterns through practical programming examples.</li>
+              <li>
+                Developed a public repository demonstrating design patterns
+                through practical programming examples.
+              </li>
             </ul>
           </article>
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Implemented from scratch</strong><span>Algorithms</span></div>
+            <div class="experience-meta">
+              <strong>Implemented from scratch</strong><span>Algorithms</span>
+            </div>
             <h3>Data Structures</h3>
-            <p class="experience-company">Efficient operations and problem-solving</p>
+            <p class="experience-company">
+              Efficient operations and problem-solving
+            </p>
             <ul>
-              <li>Implemented fundamental data structures and algorithms with clean, practical solutions.</li>
+              <li>
+                Implemented fundamental data structures and algorithms with
+                clean, practical solutions.
+              </li>
             </ul>
           </article>
         </div>
       </div>
     </div>
-    <div class="skills-modal" id="education-modal" role="dialog" aria-modal="true" aria-labelledby="education-modal-title" hidden>
+    <div
+      class="skills-modal"
+      id="education-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="education-modal-title"
+      hidden
+    >
       <div class="skills-modal-panel experience-modal-panel">
-        <button class="skills-modal-close education-modal-close" type="button" aria-label="Close education details">
+        <button
+          class="skills-modal-close education-modal-close"
+          type="button"
+          aria-label="Close education details"
+        >
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
         <p class="main-kicker">Academic background</p>
         <h2 id="education-modal-title">Education</h2>
         <div class="experience-list">
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Aug 2023 - Dec 2026</strong><span>Long Beach, CA</span></div>
+            <div class="experience-meta">
+              <strong>Aug 2023 - Dec 2026</strong><span>Long Beach, CA</span>
+            </div>
             <h3>Bachelor of Science, Computer Science</h3>
-            <p class="experience-company">California State University, Long Beach · GPA 4.0 · Dean's List</p>
+            <p class="experience-company">
+              California State University, Long Beach · GPA 4.0 · Dean's List
+            </p>
           </article>
           <article class="experience-entry">
-            <div class="experience-meta"><strong>Feb 2021 - Jun 2023</strong><span>Torrance, CA</span></div>
+            <div class="experience-meta">
+              <strong>Feb 2021 - Jun 2023</strong><span>Torrance, CA</span>
+            </div>
             <h3>Associate of Science, Computer Information Systems</h3>
-            <p class="experience-company">El Camino College · GPA 4.0 · Dean's List</p>
+            <p class="experience-company">
+              El Camino College · GPA 4.0 · Dean's List
+            </p>
           </article>
         </div>
       </div>
     </div>
+    <script src="assets/data/profile.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
