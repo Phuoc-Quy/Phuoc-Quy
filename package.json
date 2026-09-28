@@ -1,0 +1,23 @@
+{
+  "name": "phuoc-quy",
+  "version": "1.0.0",
+  "author": "Phuoc Quy",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "lint": "eslint . --ext .js,.json,.md,.css",
+    "lint:fix": "eslint . --ext .js,.json,.md,.css --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/css": "^2.0.0",
+    "@eslint/js": "^10.0.1",
+    "@eslint/json": "^2.1.0",
+    "@eslint/markdown": "^8.0.3",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.9"
+  }
+}
