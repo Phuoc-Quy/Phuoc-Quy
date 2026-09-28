@@ -6,8 +6,72 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Phuoc Quy's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
   <body>
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-label="Enable dark mode"
+      title="Enable dark mode"
+    >
+      <i class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+
+    <nav class="side-navbar" aria-label="Main navigation">
+      <a
+        class="nav-brand"
+        href="docs/Phuoc-Quy-Resume.pdf"
+        download
+        aria-label="Download CV"
+        title="Download CV"
+      >
+        CV
+      </a>
+      <div class="nav-links">
+        <a
+          href="#hero"
+          class="nav-link active"
+          aria-label="About"
+          aria-current="page"
+        >
+          <i class="fa-regular fa-id-card" aria-hidden="true"></i>
+          <span>About</span>
+        </a>
+        <a href="#main" class="nav-link" aria-label="Home">
+          <i class="fa-regular fa-house" aria-hidden="true"></i>
+          <span>Home</span>
+        </a>
+      </div>
+      <div class="nav-line" aria-hidden="true"></div>
+      <span class="nav-caption">PORTFOLIO <b>·</b> 2026</span>
+    </nav>
+
+    <section id="hero" class="hero">
+      <a
+        class="scroll-cue scroll-cue-down"
+        href="#main"
+        aria-label="Scroll down to main content"
+      >
+        <span>Scroll down</span>
+        <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <section id="main" class="main">
+      <a
+        class="scroll-cue scroll-cue-up"
+        href="#hero"
+        aria-label="Scroll up to hero section"
+      >
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+        <span>Scroll up</span>
+      </a>
+      <footer class="main-footer">
+        <i class="fa-regular fa-copyright" aria-hidden="true"></i>
+        <span>Copyright Phuoc Quy 2026</span>
+      </footer>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
