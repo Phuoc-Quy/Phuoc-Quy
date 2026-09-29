@@ -19,6 +19,13 @@ const educationModalPanel = document.querySelector(
 );
 const profileData = window.portfolioData;
 
+window.history.scrollRestoration = 'manual';
+
+window.addEventListener('load', () => {
+  window.history.replaceState(null, '', '#hero');
+  window.scrollTo(0, 0);
+});
+
 const renderEntryList = (entries) =>
   `<div class="experience-list">${entries
     .map(
